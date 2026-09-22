@@ -14,9 +14,9 @@ from aiogram.types import (
 )
 
 # ==================== Настройки ====================
-BOT_TOKEN = os.getenv("BOT_TOKEN") or "8577595131:AAHMRckooeS-4SFKA7Wd_B-L6OKnCFHHWx8"
+BOT_TOKEN = "8577595131:AAHMRckooeS-4SFKA7Wd_B-L6OKnCFHHWx8"
 # URL твоего Mini App (после деплоя)
-WEBAPP_URL = os.getenv("WEBAPP_URL") or "https://github.com/tipo4ek27-pixel/TiPo4eKbot.git"
+WEBAPP_URL = os.getenv("WEBAPP_URL") or "https://github.com/tipo4ek27-pixel/TiPo4eKbot/blob/main/dino-telegram/index.html"
 
 # ==================== Бот ====================
 logging.basicConfig(level=logging.INFO)
@@ -88,6 +88,7 @@ async def cmd_help(message: Message):
 
 
 async def main():
+    
     if BOT_TOKEN == "8577595131:AAHMRckooeS-4SFKA7Wd_B-L6OKnCFHHWx8":
         print("❌ Укажи BOT_TOKEN в переменных окружения или прямо в коде")
         return
